@@ -12,7 +12,7 @@ class ProstagesController extends AbstractController
     public function index(): Response
     {
         return $this->render('prostages/index.html.twig', [
-            'controller_name' => 'ProstagseController',
+            'controller_name' => 'ProstagesController',
         ]);
     }
 
