@@ -6,33 +6,33 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class ProstageController extends AbstractController
+class ProstagesController extends AbstractController
 {
 
     public function index(): Response
     {
-        return $this->render('prostage/index.html.twig', [
-            'controller_name' => 'ProstageController',
+        return $this->render('prostages/index.html.twig', [
+            'controller_name' => 'ProstagseController',
         ]);
     }
 
     public function entreprises(): Response
     {
-        return $this->render('prostage/entreprises.html.twig', [
-            'controller_name' => 'ProstageController',
+        return $this->render('prostages/entreprises.html.twig', [
+            'controller_name' => 'ProstagesController',
         ]);
     }
 
     public function formations(): Response
     {
-        return $this->render('prostage/formations.html.twig', [
-            'controller_name' => 'ProstageController',
+        return $this->render('prostages/formations.html.twig', [
+            'controller_name' => 'ProstagesController',
         ]);
     }
 
     public function stages($id): Response
     {
-        return $this->render('prostage/stages.html.twig', [
+        return $this->render('prostages/stages.html.twig', [
             'id_stage' => $id, 
         ]);
     }
